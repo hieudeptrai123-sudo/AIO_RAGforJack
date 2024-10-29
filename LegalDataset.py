@@ -1,4 +1,4 @@
-from datasets import Dataset
+from torch.utils.data import Dataset
 class LegalDataset(Dataset):
     def __init__(self, df, tokenizer_question, tokenizer_context, max_length):
         self.df = df
